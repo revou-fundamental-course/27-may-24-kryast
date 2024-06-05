@@ -1,11 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ahmad Syarifuddin Portofolio</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- Navigasi Bar -->
+    <header>
+      <nav class="navbar-container">
+        <img src="assets/logo2.png" /> <!--  Logo icon -->
+        
+
+        <div>
+          <ul class="nav-item-container"> 
+            <li class="nav-item">
+              <a href="#" class="nav-a">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#our-facilities" class="nav-a">Our Facilities</a>
+            </li>
+            <li class="nav-item">
+              <a href="#message-us" class="nav-a">Message Us </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- Ini Navigasi Bar Selesai -->
+
+    <hr />
+
+    <!-- Welcoming speech -->
+    <main class="welcome-container">
+      <header>
+        <h2 class="welcome-title">
+          Hi <span id="input-nama" class="input-nama"></span> , Welcome to
+          Sekolah Sekolahan
+        </h2>
+      </header>
+
+      <article>
+        <p>Ini adalah website resmi Sekolah Sekolahan</p>
+      </article>
+    </main>
+    <!-- Welcoming speech End -->
+
+    <!-- Banner -->
+    <main class="slider">
+      <section class="slides-container">
+        <div class="slide">
+          <img src="assets/slide1.jpg" alt="slide 1" />
+        </div>
+        <div class="slide">
+          <img src="assets/slide2.jpg" alt="slide 2" />
+        </div>
+        <div class="slide">
+          <img src="assets/slide3.jpg" alt="slide 3" />
+        </div>
+      </section>
+    </main>
+    <!-- Banner End -->
+
+    <hr />
+
+    <!-- Our Facilities -->
+    <main
+      class="facilities-background"
+      name="our-facilities"
+      id="our-facilities"
+    >
+      <header>
+        <h2>Our Facilities</h2>
+      </header>
+
+      <article class="facilities-container">
+        <div>
+          <div class="facilities-item"></div>
+          <img src="assets/teacher.png" />
+          <h3 class="facilities">Professional <br />Teacher</h3>
+        </div>
+
+        <div>
+          <div class="facilities-item"></div>
+          <img src="assets/sportfield.jpg" />
+          <h3 class="facilities">Sport Field</h3>
+        </div>
+
+        <div>
+          <div class="facilities-item"></div>
+          <img src="assets/classroom.jpg" />
+          <h3 class="facilities">Classroom</h3>
+        </div>
+      </article>
+    </main>
+    <!-- Our Facilities End -->
+
+    <hr />
+
+    <!-- Message Us-->
+    <main class="message-container" id="message-us">
+      <section class="form-container">
+        <h2>Message Us</h2>
+        <form id="message-form" class="form-group">
+          <label for="nama">Nama:</label>
+          <input type="text" id="nama" name="nama" /><br /><br />
+          <label for="tanggal-lahir">Tanggal Lahir:</label>
+          <input
+            type="date"
+            id="tanggal-lahir"
+            name="tanggal-lahir"
+          /><br /><br />
+          <label for="jenis-kelamin" id="jenis-kelamin">Jenis Kelamin:</label>
+          <input
+            type="radio"
+            id="laki-laki"
+            name="jenis-kelamin"
+            value="Laki-Laki"
+          />
+          <label for="laki-laki">Laki-Laki</label>
+          <input
+            type="radio"
+            id="perempuan"
+            name="jenis-kelamin"
+            value="Perempuan"
+          />
+          <label for="perempuan">Perempuan</label><br /><br />
+          <label for="pesan">Pesan:</label><br />
+          <textarea id="pesan" name="pesan" rows="4" cols="50"></textarea
+          ><br /><br />
+          <button type="button" onclick="submitForm()">Submit</button>
+        </form>
+      </section>
+      <section class="output-container" id="output-container">
+        <br />
+        <p id="current-time"></p>
+        <br />
+        <p id="output-nama"></p>
+        <p id="output-tanggal-lahir"></p>
+        <p id="output-jenis-kelamin"></p>
+        <p id="output-pesan"></p>
+      </section>
+    </main>
+    <!-- Message Us end-->
+
+    <hr />
+
+    <!-- Footer -->
+    <section>
+      <p class="footer">Created by Ahmad Syarifuddin</p>
+    </section>
+    <!-- Footer End -->
+
+    <script src="js/script.js"></script>
+  </body>
 </html>
